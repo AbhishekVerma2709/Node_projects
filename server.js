@@ -8,10 +8,10 @@ var async = require('async');
 
 
 var client = new Twitter({
-  consumer_key: 'ILJ7guVXtU2yY61ek42bm94FX',
-  consumer_secret: '8daZDO07UakJbJYUjJVbaY1O407ZRaE14Edx3DW1fub6j3NlDY',
-  access_token_key: '43328325-6a0MAvnAgtlTUr2a6zoS9Sr8fNoANSzvi0LoKKHL8',
-  access_token_secret: 'R1rgEhHXXGXjweMOFJPlEML4DTF9IzZVaZ4nOU7YQ6eD2'
+  consumer_key: Process.env.consumer_key,
+  consumer_secret: ' Process.env.consumer_secret',
+  access_token_key: 'Process.access_token_key',
+  access_token_secret: 'Process.access_token_secret'
 });
 
 
