@@ -1,0 +1,50 @@
+<!DOCTYPE>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="">
+
+<!-- Optional theme -->
+   <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<title>Best time to Tweet!</title>  
+	<title>Best time to Tweet!</title> 
+	
+</head>
+<body ng-app='myApp' ng-controller='myCtrl'>
+ 	<div class="container" >
+ 	<div class="col-md-8 col-md-offset-4">
+ 		<h2> Find best time to tweet ! </h2>
+		<input type='search' size="30" placeholder=" username ex. Abhishek_2609" ng-model='username'>
+	    </br>
+	    </br>
+        <p class="text-left">OR</p>
+	    </br>
+		<input type='search' size="30" placeholder="user id ex. 12345" ng-model='userid'></br></br>
+		<button class="btn btn-info btn-lg" name="find" ng-click='findBestTime()'>Find for your self</button>
+		<button class="btn btn-info btn-lg" name="reset" ng-click='reset()'>Reset</button> </br></br>
+        
+    	
+
+     </div>
+     <div class = "col-le-0 col-md-offset-0">
+     <h4><label>{{ time }}</label><h4> </br>
+	 <h4><label>{{ day }}</label></h4></br>
+	 <h4><label>{{ error}}</label></h4></br>
+	
+	 <h2><span class='label label-info'>{{process}}</span></h2></br>
+     </div>
+
+    </div>
+
+ 
+
+
+</body>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+ <script src="controllers/controllers.js"></script>
+
+</html>
